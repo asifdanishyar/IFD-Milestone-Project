@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+.logo{
+    background: url("../images/buda.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 9em;
+    height: 9em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -ms-transform: scale(width,height); /* IE 9 */
+    -webkit-transform: scale(width,height); /* Safari */
+     transform: scale(width, height);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  float: right;
+  
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(45, 92, 7);
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: rgb(221, 221, 221);
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #525252;
+  color: #fafafa;
+  min-height: 120px;
+  margin: 0;
+  padding: 10px;
+}
+
+

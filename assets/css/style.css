@@ -1,5 +1,5 @@
 /* Responsive layout - Always remember this shit */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .grid-container  {
     grid-template-areas: 
       'header header header header header header' 
@@ -35,13 +35,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
-  right: 0;
-  top: 0;
-   transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
 }
-
 /* Style the topnav links */
 .topnav a {
   float: right;
@@ -50,14 +44,16 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.5em;
+  text-transform: uppercase;
+  font-size: 1em;
 }
 
 /* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.hvr-fade:before{
+     background: rgba(0, 0, 0, 0.2);
+    height: 100px;
 }
+
 
 /* Style the header */
 .header {

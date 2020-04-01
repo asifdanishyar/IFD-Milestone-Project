@@ -43,6 +43,7 @@ body {
 }
 
 .column {
+  size: 40px;
   float: left;
   text-align: center;
   width: 33.33%;
@@ -56,6 +57,16 @@ body {
   display: table;
   clear: both;
 }
+
+.socialImage {
+   width: 150px;
+  height: 150px;
+  background-image: url("../images/fb.jpg");
+  background-size: 100% 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
 .header {
   grid-area: header;
   background-color: #f1f1f1;

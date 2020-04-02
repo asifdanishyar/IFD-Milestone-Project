@@ -18,23 +18,22 @@ body {
     
 }
 
-.navbar {
-    background: none;
-    border-color: transparent;
-    letter-spacing: 7px;
-    text-transform: uppercase;
-}
+/* social menu here */
+.sub{
+    margin-left: 45px;
+   size: 35px;
 
-.navbar .navbar-collapse {
-    text-align: right;
-    border-top: 1px solid transparent;
-    overflow-x: hidden;
 }
+.fb {
+  
+   width: 50px;
+   height: 40px;
+   margin-left: 50px;
+   background-image: url("../images/fb.jpg");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
 
-.navbar-nav li a {
-    padding: 20px 25px 15px 25px;
-    color: transparent;
-}
+}​
 
 /* Style the footer */
 .footer {
@@ -45,8 +44,11 @@ body {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  .column {
-    width: 100%;
+  .fb {
+       
+    width: 20%;
+    position: relative;
+
   }
 }
 /* Style the header */

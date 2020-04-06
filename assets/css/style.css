@@ -19,6 +19,9 @@ body {
 }
 
 /* social menu here */
+.h2{
+    text-anchor: middle;
+}
 .sub{
     margin-left: 45px;
    size: 35px;
@@ -26,8 +29,8 @@ body {
 }
 .fb {
   
-   width: 50px;
-   height: 40px;
+   width: 140px;
+   height: 140px;
    margin-left: 50px;
    background-image: url("../images/fb.jpg");
    background-size: 100% 100%;
@@ -41,16 +44,21 @@ body {
   padding: 10px;
   text-align: center;
 }
-
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .fb {
-       
-    width: 20%;
-    position: relative;
+@media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-  }
-}
 /* Style the header */
 
 

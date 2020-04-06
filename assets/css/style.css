@@ -15,10 +15,72 @@ body {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+
     
 }
+a{
+    color: black;
+}
 
+/* special events */
+.eventbox{
+    border: 1 solid;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+    height: 150px;
+    background-color: green;
+}
+
+.buzkashee{
+    border: 1 solid;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/buzkashee.jpg");
+    background-size: cover;
+}
+.btext{
+    border: 1 solid;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: black;
+
+    float: left;
+    width: 160px;
+    height: 100px;
+    background-color: lightgray;
+}
 /* social menu here */
+div.content{
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 20px;
+}
+div#fb{
+     background-image: url("../images/fb.jpg");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     border-radius: 100%;
+     
+}
+div#twitter{
+     background-image: url("../images/twitr.jpg");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     border-radius: 100%;
+}
+div#email{
+     background-image: url("../images/email.png");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     border-radius: 100%;
+}
+
 .h2{
     text-anchor: middle;
 }
@@ -27,16 +89,7 @@ body {
    size: 35px;
 
 }
-.fb {
-  
-   width: 140px;
-   height: 140px;
-   margin-left: 50px;
-   background-image: url("../images/fb.jpg");
-   background-size: 100% 100%;
-   background-repeat: no-repeat;
 
-}​
 
 /* Style the footer */
 .footer {
@@ -44,20 +97,13 @@ body {
   padding: 10px;
   text-align: center;
 }
-.bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+@media screen and (min-width:768px){
+	.partners .col-sm-2, .hp_partners .col-md-2{ 
+    	width:100%;
+	}
+}
 
 /* Style the header */
 

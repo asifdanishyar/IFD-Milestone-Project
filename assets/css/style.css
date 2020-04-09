@@ -24,26 +24,29 @@ a{
 
 
 /* special events */
-.container{
-	width:60%;
+.container .jj{
+	width:100%;
 	overflow: hidden;
 	background: lightgreen;
-	margin:1px;
+	margin:10px;
 	padding: 1px;
+    float: none;
+    background-size: cover;
 }
 
 .container ul{
-	padding: 10px;
-	margin: 1px;
+    width: 30%;
+    float: left;
+	padding: 1px;
+	margin: 10px;
 }
 
 .container ul li{
 	list-style: none;
 	float: left;
 	width: 100%;
-	height: 100%;
-	size: cover;
-	margin-left: 5px;
+	height: auto;
+	margin: 10px;
 }
 .container ul li title{
 	width: 100%;
@@ -51,6 +54,7 @@ a{
 	line-height: 50px;
 	background: white;
     text-align: center;
+    margin: 10px;
 
 }
 
@@ -64,13 +68,46 @@ a{
     
 }
 
-/* hours */
+/* maybe works just for test */
+  #leftbox { 
+                float:left;  
+                background: lightgray; 
+                width:25%; 
+                padding: 10px;
+                height:280px; 
+                border: 1px solid;
+            } 
+            #middlebox{ 
+                float:left;  
+                background: lightgray; 
+                width:25%; 
+                height:280px; 
+                border: 1px solid;
+            }
+            #rightbox{ 
+                float:right; 
+                background: lightgray; 
+                width:50%; 
+                height:280px; 
+                border: 1px solid;
+                
+            }
+#eventimg{
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    margin-right: 10px;
+    size: cover;
+    align-items: center;
+    padding: 10px;
 
-
-p {
-  text-align: right;
-  padding-top: -100px;
 }
+            
+         
+          
+            
+
+
 
 
 
@@ -85,7 +122,7 @@ p {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
-@media screen and (min-width:751px){
+@media screen and (min-width:769px){
 	.container ul li {
 	    width: 28%;
         float: left;
@@ -96,16 +133,32 @@ p {
 }
 }
 
-@media screen and (max-width:750px){
-	.container{
-	    width: 100%;
-	    padding: 0px;
+@media screen and (max-width:768px){
+    #eventimg{
+        margin: 10px;
         align-items: center;
-}       .container ul li{
-		float: none;
-		width: 90%;
+        padding: 10px;
+    }
+    p, h3, h4{
+        text-align: center;
+    }
+    #leftbox, #middlebox, #rightbox{
+        width: 90%;
+        margin: 10px;
+        float: none
+        
+        
+    }
+	.container{
+	    width: 60%;
         height: auto;
-		margin: 10px auto;
+	    padding: 0%;
+        float: none;
+}       .container ul li{
+		float: left;
+		width: 100%;
+        height: auto;
+		margin: 10px;
 			            }
         .container ul li title{
             text-align: center;

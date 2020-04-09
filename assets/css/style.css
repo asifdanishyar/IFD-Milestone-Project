@@ -24,52 +24,12 @@ a{
 
 
 /* special events */
-.container .jj{
-	width:100%;
-	overflow: hidden;
-	background: lightgreen;
-	margin:10px;
-	padding: 1px;
-    float: none;
-    background-size: cover;
-}
 
-.container ul{
-    width: 30%;
-    float: left;
-	padding: 1px;
-	margin: 10px;
-}
-
-.container ul li{
-	list-style: none;
-	float: left;
-	width: 100%;
-	height: auto;
-	margin: 10px;
-}
-.container ul li title{
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
-	background: white;
-    text-align: center;
-    margin: 10px;
-
-}
-
-.container ul li:hover{
-	opacity: 0,9;
-}
-
-.container ul li .title:hover{
-	
-	color: blue;
     
-}
+
 
 /* maybe works just for test */
-  #leftbox { 
+  #spevents { 
                 float:left;  
                 background: lightgray; 
                 width:25%; 
@@ -77,19 +37,21 @@ a{
                 height:280px; 
                 border: 1px solid;
             } 
-            #middlebox{ 
+            #eventimgs{ 
                 float:left;  
                 background: lightgray; 
                 width:25%; 
                 height:280px; 
                 border: 1px solid;
+                padding: 10px;
             }
-            #rightbox{ 
+            #hours{ 
                 float:right; 
                 background: lightgray; 
                 width:50%; 
                 height:280px; 
                 border: 1px solid;
+                padding: 10px;
                 
             }
 #eventimg{
@@ -101,6 +63,29 @@ a{
     align-items: center;
     padding: 10px;
 
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    display: block;
+}
+.container title{
+    width: 100%;
+	height: 50px;
+	line-height: 50px;
+    text-align: center;
+    margin: 10px;
+}
+.col-md-4{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: none;
 }
             
          
@@ -134,6 +119,11 @@ a{
 }
 
 @media screen and (max-width:768px){
+    .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    }
     #eventimg{
         margin: 10px;
         align-items: center;

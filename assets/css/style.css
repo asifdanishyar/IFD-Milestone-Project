@@ -52,7 +52,7 @@ a{
 #eventimg{
     width: 90%;
     height: 200px;
-    margin: 10px;
+    margin: 20px;
     margin-right: 10px;
     size: cover;
     align-items: center;
@@ -86,7 +86,11 @@ a{
   color: white;
 }
             
-         
+ #map{
+            height: 300px;
+            width: 90%;
+            margin: 30px;
+        }     
           
             
 
@@ -124,7 +128,7 @@ a{
     #eventimg{
         margin: 0px;
         align-items: center;
-        padding: 0px;
+        padding: 20px;
     }
     p, h3, h4{
         text-align: center;
@@ -132,7 +136,8 @@ a{
     #spevents, #eventimgs, #hours{
         width: 90%;
         margin: 30px;
-        float: none        
+        padding: 30px, 10px;
+        float: none;        
     }
 }
 

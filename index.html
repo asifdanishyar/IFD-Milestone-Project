@@ -16,6 +16,19 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     </head>
      <body>
+    
+     <script> 
+        function initMap(){
+            var options={
+                zoom: 8,
+                center:{lat:56.2639,lng:-9.5018}
+            }
+            var map= new google.maps.Map(document.getElementById('map'), options);
+        }
+     </script>
+      <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key= AIzaSyA1-VMjaOB4kaCnASRxLYemI-d_FzyQEDY&callback=initMap">
+    </script>
    <!---  --->  
  <nav class="navbar navbar-expand-sm bg-light navbar-light">
   <a class="navbar-brand" href="index.html"><h4>Bamyan</h4></a>
@@ -39,11 +52,11 @@
     </ul>
   </div>  
 </nav>
-        <div class="backgroundpic"><a href="index.html"></a></div>
+<div class="backgroundpic"><a href="index.html"></a></div>
 
-             <div id = "boxes"> 
+<div id = "boxes"> 
               
-            <div id = "spevents"> 
+    <div id = "spevents"> 
                 <h3>Special events:</h3> 
               <p><h4><a href="#">link to the events</a></p>
               <p><a href="#">link to the events</a></p>
@@ -59,6 +72,7 @@
                
             </div> 
         </div> 
+        
         <div class="navbar">
             <a href="#" class="fa fa-facebook"></a>
             
@@ -67,7 +81,7 @@
         </div>
 
         <!-- API called by id-->
-        <div id="data"></div>
+        <div id="map"></div>
         
             
  

@@ -85,6 +85,28 @@ a{
   background: #007bb5;
   color: white;
 }
+
+/* Style the footer */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
             
  #map{
             height: 300px;

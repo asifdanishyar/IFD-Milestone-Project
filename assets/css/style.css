@@ -76,10 +76,56 @@ nav ul li a {
 
 
 
-/* special events */
-  
+/* gallary */
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
 
-/* div gallery */
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+/* Map */
 
 
        
@@ -119,16 +165,19 @@ nav ul li a {
         border: 1px solid;
         float: left;
     }
-    div.gallery{
-        width: 30%;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 4px;
-        float: left;
-    }
 }
 
 @media screen and (max-width:786px){
+    .row{
+        width: 100%;
+        margin: 20px;
+
+    }
+    .column{
+        width: 100%;
+        margin: 10px;
+
+    }
      .logo {
             position: fixed;
             top: 0;
@@ -169,46 +218,7 @@ nav ul li a {
         width: 100%;
         float: left;
     }
-    
-    div.gallery{
-        width: 80%;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: 4px;
-        margin-bottom: 10px;
-    }
-    .socialBox{
-        width: 90%;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: 1px;
-
-        align-items: center;
-        padding: 0px;
-        float: left;
-
-    }
-    .fa{
-        width: 10%;
-        margin: 0px;
-    }
-    #eventimg{
-        margin: 0px;
-        align-items: center;
-        padding: 5px;
-    }
-    p, h3, h4{
-        text-align: center;
-    }
-    #spevents, #eventimgs, #hours{
-        width: 90%;
-        margin-left: 30px;
-        margin-top: 3px;
-        padding: 30px;
-        float: none;        
-    }
 }
 
-/* Style the header */
 
 

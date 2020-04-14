@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -58,36 +59,45 @@
             </nav>
          </header>
 
-<div id = "boxes"> 
-              
-    <div id = "spevents"> 
-                <h3>Special events:</h3> 
-              <p><h4><a href="#">link to the events</a></p>
-              <p><a href="#">link to the events</a></p>
-              <p><a href="#">link to the events</a></p></h4>
-            </div>               
-            <div id = "eventimgs"> 
-                <h4>Images:</h4> 
-                <div id="eventimg"><img src="assets/images/events.jpg"width="93%" height="200px"></img></div>
-            </div> 
-            <div id = "hours"> 
-                <h4>Hours:</h4> 
-                <div id="eventimg"><img src="assets/images/openingtime.JPG"width="93%" height="200px"></img></div>
-               
-            </div> 
-        </div> 
-        <div class="socialBox">
-        <div class="navbar">
-            <a href="#" class="fa fa-facebook"></a>
-            
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-        </div></div>
+<div class="w3-container w3-cyan">
+  <h1>Special Events</h1> 
+  <p>Summer, Winter and Spring</p> 
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <h2>Events</h2>
+    <p style=" font-size: 15px;">Dambora festival</p>
+    <p style=" font-size: 15px;">Sking</p>
+    <p style=" font-size: 15px;">Buzkashee</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Park-E-Melli Opening time</h2>
+    <p style=" font-size: 15px;"><b>Sunday:</b> 9:00-17:00</p> 
+    <p style=" font-size: 15px;"><b>Monday:</b> 9:00-17:00</p> 
+    <p style=" font-size: 15px;"><b>Tuesday:</b> 9:00-17:00</p> 
+    <p style=" font-size: 15px;"><b>Wedensday:</b> 9:00-17:00</p>
+    <p style=" font-size: 15px;"><b>Thursday:</b> 9:00-17:00</p>
+    <p style=" font-size: 15px;"><b>Friday:</b> 9:00-17:00</p> 
+    <p style=" font-size: 15px;"><b>Saturday: Closed</b></p>    
+  </div>
+
+  <div class="w3-third">
+    <h2>Contact</h2>
+    <p style=" font-size: 15px;"><u>Tlf:</u> 009323223232</p>
+    <p style=" font-size: 15px;"><u>Fax:</u> 009343434543</p>
+    <p style=" font-size: 15px;"><u>Email:</u> pem@gmail.com</p>
+  </div>
+</div>
+
+        <!-- API called by id-->
+        <div id="map"></div>
 
         <!-- Galery-->
 
-      <div class="container">
-  <h2>Images</h2>  
+     <div class="container">
+  <h2>Carousel Example</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -98,17 +108,31 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
+
       <div class="item active">
-        <img src="assets/images/b1.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="assets/images/b2.jpg" alt="Chicago" style="width:100%;">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
       </div>
     
       <div class="item">
-        <img src="assets/images/b3.jpg" alt="New york" style="width:100%;">
+        <img src="ny.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
       </div>
+  
     </div>
 
     <!-- Left and right controls -->
@@ -122,9 +146,6 @@
     </a>
   </div>
 </div>
-        <!-- API called by id-->
-        <div id="map"></div>
-
         
             
  

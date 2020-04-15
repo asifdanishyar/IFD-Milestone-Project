@@ -144,11 +144,40 @@ nav ul li a {
 
 
 /* Style the footer */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 .footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-  float: none;
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -168,6 +197,10 @@ nav ul li a {
 }
 
 @media screen and (max-width:786px){
+    .footer{
+        width: 100%
+        
+    }
     .row{
         width: 100%;
         margin: 20px;
@@ -178,11 +211,6 @@ nav ul li a {
         margin: 10px;
 
     }
-     .logo {
-            position: fixed;
-            top: 0;
-            margin-top: 16px;
-      }
 
       nav ul {
             max-height: 0px;
@@ -209,15 +237,17 @@ nav ul li a {
       }
 
     #map{
-        width: 80%;
-        margin: 10px;
+        width: 60%;
+        margin: 30px;
         float: left;
+        align-items: center;
 
     }
     .footer{
         width: 100%;
         float: left;
     }
+    
 }
 
 

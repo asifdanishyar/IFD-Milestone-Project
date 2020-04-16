@@ -67,7 +67,7 @@
 
 <div class="w3-container w3-cyan">
   <h1>Special Events</h1> 
-  <p>Summer, Winter and Spring</p> 
+  <p style="text-align:left;">Summer, Winter and Spring</p> 
 </div>
 
 <div class="w3-row-padding">
@@ -98,6 +98,8 @@
 </div>
 
       
+  <!-- API called by id-->
+        <div id="map"></div>
 
         <!-- Galery-->
 
@@ -106,37 +108,24 @@
     </div>
     <div class="row">
   <div class="column">
-    <img src="assets/images/b1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <img src="assets/images/b1.jpg" alt="" style="width:100%">
   </div>
   <div class="column">
-    <img src="assets/images/b4.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <img src="assets/images/b4.jpg" alt="" style="width:100%">
   </div>
   <div class="column">
-    <img src="assets/images/buda3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <img src="assets/images/buda3.jpg" alt="" style="width:100%">
   </div>
   <div class="column">
-    <img src="assets/images/bamyan1.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <img src="assets/images/bamyan1.jpg" alt="" style="width:100%">
   </div>
 </div>
 
 <div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
 </div>
 
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
 
-  <!-- API called by id-->
-        <div id="map"></div>
+
         
             
  
@@ -149,17 +138,10 @@ function myFunction(imgs) {
           
               <!--footer -->      
 
-   <footer class="container-fluid">
-        <div id="footer-details" class="row">
-            <div class="col-sm-6">
-                <h5 class="uppercase general-sub">About</h5>
-                <p class="inline-block">
-                    This webpage is build to attract the tourists from different parts of the world. 
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <h5 class="uppercase general-sub">Follow us on</h5>
-                <ul class="list-inline social-links">
+   <footer>
+        <div class="footer">
+        <p style="text-align:left;">Copy right 2020</p>
+        <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a target="_blank" href="https://www.facebook.com/login">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -186,7 +168,6 @@ function myFunction(imgs) {
                     </li>
                    
                 </ul>
-            </div>
         </div>
     </footer>
 

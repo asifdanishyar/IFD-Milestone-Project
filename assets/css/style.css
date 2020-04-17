@@ -158,7 +158,7 @@ nav ul li a {
 }
 
 .social-links li a i:hover {
-    background: #e84610;
+    background: blueviolet;
 }
 
 /* CSS for page History*/
@@ -202,6 +202,10 @@ p{
 }
 
 @media screen and (max-width:786px){
+    .content{
+        width: 100%;
+    }
+    
     p{
         text-align: center;
         float: left;

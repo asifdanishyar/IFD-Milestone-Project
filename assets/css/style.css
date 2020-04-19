@@ -212,7 +212,7 @@ nav ul li a {
     padding: 15px 0px 0px 25px;
     font-size: 12px;
 }
-/*create a line*/
+                        /*create a line*/
 #content hr {
     color: #A9A87C;
     border: none;
@@ -372,8 +372,9 @@ hr {
     }
     #formar{
         width: 90%;
-        float: left;
+        float: center;
         text-align: center;
+
     }
 
 /* index and history responsive*/

@@ -302,11 +302,27 @@ hr {
 }
 
 /* CSS FOR CONTACT PAGE*/
-.contact-main{
-    width: 100%;
-    margin: 10px;
-    float: left;
-    padding: 10px;
+.bg-color-contact {
+    background-color: #ffffff;
+}
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (min-width:787px){

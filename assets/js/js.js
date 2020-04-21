@@ -1,7 +1,7 @@
  $(document).ready(function() {
             $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showing");
-                  $("nav ul").toggleClass("hiding");
+                  $("nav ul").toggleClass("showen");
+                  $("nav ul").toggleClass("hidden");
             });
       });
 

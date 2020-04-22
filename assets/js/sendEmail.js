@@ -8,7 +8,6 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-               $("contactForm").find(name, emailaddress, projectsummary).val("");
            },
           
            
@@ -20,3 +19,10 @@ function sendMail(contactForm) {
     return false;  // To block from loading a new page
     
 }
+function doClear()
+{
+  
+contactForm.name.value = "";
+contactForm.emailaddress.value = "";
+contactForm.projectsummary.value = "";
+} 

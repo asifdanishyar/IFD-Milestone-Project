@@ -324,6 +324,7 @@ button[type="submit"] {
     background-color: #e84610;
     color: #fafafa;
 }
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (min-width:787px){
     .two-photo-left {

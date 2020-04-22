@@ -8,7 +8,10 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-        },
+               $("contactForm").find(name, emailaddress, projectsummary).val("");
+           },
+          
+           
         function(error) {
             console.log("FAILED", error);
         }

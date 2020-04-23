@@ -305,17 +305,11 @@ hr {
 .bg-color-contact {
     background-color: #ffffff;
 }
-.contact-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 100%;
+    text-align: center;
 }
 
 button[type="submit"] {

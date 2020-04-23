@@ -7,12 +7,15 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            console.log("SUCCESS", response);
+            contactForm.name.value="";
+            contactForm.emailaddress.value="";
+            contactForm.projectsummary.value="";
            },
           
            
         function(error) {
             console.log("FAILED", error);
+            
         }
     
     );

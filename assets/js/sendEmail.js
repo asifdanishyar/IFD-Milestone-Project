@@ -7,7 +7,9 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            console.log("success", response);
+            contactForm.name.value="",
+            contactForm.emailaddress.value="",
+            contactForm.projectsummary.value=""
            },
           
            

@@ -25,3 +25,13 @@ function myFunction(imgs) {
   imgText.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = "block";
 }
+//for active menues
+var header = document.getElementById("activeDiv");
+var menubtns = header.getElementsByClassName("li a");
+for (var i = 0; i < menubtns.length; i++) {
+  menubtns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}

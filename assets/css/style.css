@@ -1,7 +1,7 @@
 
 html, body {
       margin: 0;
-      padding: 0;
+      padding:0;
       width: 100%;
 }
 
@@ -63,9 +63,17 @@ nav ul li {
 }
 
 nav ul li a {
-      text-decoration: none;
-      color: whitesmoke;
-      font-size: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+      
+}
+.active, li a:hover {
+ background-color: green;
+ color: white;
+ font-style: bold;
+ font-size: 22px;
 }
 
 .menu-icon {
@@ -79,7 +87,18 @@ nav ul li a {
       color: #fff;
       display: none;
 }
-
+#activitiesbtn{
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: 5px;
+    display: block;
+    background-color: white;
+    color: red;
+    font-size:20px;
+    border-radius: 50%;
+    height: 70px;
+    border: 1px solid;
+}
 
 
 
@@ -117,6 +136,8 @@ nav ul li a {
   display: none;
   width: 80%;
   padding: 20px;
+  align-content: center;
+  margin: auto;
 }
 
 /* Expanding image text */
@@ -126,6 +147,7 @@ nav ul li a {
   left: 15px;
   color: white;
   font-size: 20px;
+  padding: 10px;
 }
 
 /* Closable button inside the expanded image */
@@ -349,8 +371,18 @@ button[type="submit"] {
     color: #fafafa;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive layout - full page size */
 @media screen and (min-width:787px){
+    #imggallery{
+        text-align: center;
+        padding: auto;
+        margin: auto;
+    }
+    #events{
+        text-align: center;
+        padding: auto;
+        margin: auto;
+    }
     .two-photo-left {
     width: 45%;
     height: auto;
@@ -372,6 +404,7 @@ button[type="submit"] {
         opacity: 0.9;
         position: relative;
         bottom: 0px;
+        font-size: 20px;
     }
 
     .center-form {

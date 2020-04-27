@@ -7,9 +7,7 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            contactForm.name.value="";
-            contactForm.emailaddress.value="";
-            contactForm.projectsummary.value="";
+            console.log("success");
            },
           
            
@@ -22,10 +20,3 @@ function sendMail(contactForm) {
     return false;  // To block from loading a new page
     
 }
-function doClear()
-{
-  
-contactForm.name.value = "";
-contactForm.emailaddress.value = "";
-contactForm.projectsummary.value = "";
-} 

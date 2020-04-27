@@ -102,7 +102,7 @@ nav ul li a {
 
 
 
-/* gallary in index */
+/* gallery in index page linked with a button called "Show events" */
 .column {
   float: left;
   width: 25%;
@@ -223,8 +223,8 @@ nav ul li a {
 .pDesign{
     width: 90%;
     font-size: 18px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -242,7 +242,10 @@ nav ul li a {
     background: url("../images/Statue1.jpg");
     background-size: 100% 100%;
     border-radius: 8px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 10px;
     float: left;
 }
 
@@ -253,7 +256,10 @@ nav ul li a {
     background: url("../images/Statue2.JPG");
     background-size: 100% 100%;
     border-radius: 8px;
-    margin: 10px;
+     margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 10px;
     float: left;
 }
 
@@ -362,27 +368,32 @@ hr {
     margin: 0 auto;
     max-width: 100%;
     text-align: center;
+    align-items: center;
+    align-content: center;
 }
 
 button[type="submit"] {
+    width: 80px;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
     background-color: #e84610;
     color: #fafafa;
 }
 
 /* Responsive layout - full page size */
 @media screen and (min-width:787px){
-    #imggallery{
+    
+    #events, #imggallery, #mapPosition, #historyCenter, #guidecenter, #contactCenter {
         text-align: center;
-        padding: auto;
-        margin: auto;
+        padding-left: auto;
+        padding-right: auto;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        align-content: center;
     }
-    #events{
-        text-align: center;
-        padding: auto;
-        margin: auto;
-    }
+   
     .two-photo-left {
     width: 45%;
     height: auto;
@@ -417,6 +428,11 @@ button[type="submit"] {
 }
 /*Guide responsive*/
 @media screen and (max-width:786px){
+    .center-form{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
     .two-photo-left{
         width: 90%;
         margin: 20px;
@@ -510,8 +526,8 @@ button[type="submit"] {
 
     #map{
         width: 60%;
-        margin-left: 90px;
-        margin-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
         float: left;
         text-align: center;
     }

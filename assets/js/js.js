@@ -35,3 +35,19 @@ for (var i = 0; i < menubtns.length; i++) {
   this.className += " active";
   });
 }
+
+//google map
+
+        function initMap(){
+            var options={
+                zoom: 12,
+                center: {lat: 34.81001, lng: 67.82121}
+            }
+            var map= new google.maps.Map(document.getElementById('map'), options);
+        var marker= new google.maps.Marker({
+            position:{lat:34.8321, lng:-67.8268},
+            map:marker
+       
+       });
+        }
+      

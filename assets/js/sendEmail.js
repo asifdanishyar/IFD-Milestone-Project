@@ -7,7 +7,7 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            console.log("success");
+            console.log("success", response);
            },
           
            

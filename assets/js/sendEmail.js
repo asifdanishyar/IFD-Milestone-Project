@@ -10,6 +10,7 @@ function sendMail(contactForm) {
             contactForm.name.value="",
             contactForm.emailaddress.value="",
             contactForm.projectsummary.value=""
+            console.log("Successfully sent", response);
            },
           
            

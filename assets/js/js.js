@@ -26,8 +26,8 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 //for active menues
-var li = document.getElementById("activeDiv");
-var menubtns = li.getElementsByClassName("li a");
+var menuactive = document.getElementById("activeDiv");
+var menubtns = menuactive.getElementsByClassName("li a");
 for (var i = 0; i < menubtns.length; i++) {
   menubtns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("active");

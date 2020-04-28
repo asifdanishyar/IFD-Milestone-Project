@@ -19,14 +19,14 @@ the project is designed very simple and user-friendly. I have put an image backg
 light grey colors to the rest of the pages to keep the pages as simple as possible. The reason i put the image in 
 the background is to highlight the purpose of the website. in the main page there is a link to another page
 which gives information about different activities. There is also some pictures which showes different places.
-In the footer i have only once link to facebook which gives the oportunity to follow us on facebook.
+In the footer i have only one link to facebook which gives the oportunity to follow us on facebook.
 my user experience notes helped me a lot when i was stucking on something. my original planning and mapping
 is available for review in GitHub. They are linked as follow:
 
-+ **Strategy Plane** - [https://github.com/S-Perring/Milestone2-GrubHub/blob/master/Assets/Strategy%20Plane%20MS2.pdf]
-+ **Scope Plane** - [https://github.com/S-Perring/Milestone2-GrubHub/blob/master/Assets/Scope%20Plane%20MS2.pdf]
-+ **Structure Plane** - [https://github.com/S-Perring/Milestone2-GrubHub/blob/master/Assets/Structure%20Plane%20MS2.pdf]
-+ **Skeleton Plane** - [https://github.com/S-Perring/Milestone2-GrubHub/blob/master/Assets/Skeleton%20Plane_Wireframe%20MS2.pdf]
++ **Scope Planning** - []
++ **Strategic Planning** - [https://github.com/asifdanishyar/IFD-Milestone-Project/blob/master/assets/PDF-Files/2ndMileStoneProject-Prototype.pdf]
++ **Structure** - []
++ **Skeleton** - []
 
 ### **Project expansion**
 
@@ -55,7 +55,7 @@ CSS and JavaScript code. The display and functionality were tested using GitPod.
 I used the following process to deploy written and tested code to my GitHub repository;
 + git add -A  "to select all the changes i made".
 + git commit -m "description of commiting".
-+ git push
++ git push... to push the changes to the repository.
 
 ### **Testing**
 Basically testing were done in dailybases as the project build was ongoing. I have used gitpod tools to test
@@ -71,7 +71,8 @@ i tried to use CSS to ensure the presentation of the images and forms to be user
 + I have got the Javascript code from google and edit it according to my needs.
 + I spent lots of time on menu toggle Class which was not working when i was testing in smaller screen. I shared
 this issue with Slack Community, mentor, totur support and finally playing with the coding words in js, 
-i was able to solve the issue and move forward.
+i was able to solve the issue and move forward. Of course i have got reply to my question, but
+it was already done. 
 + Credit to my mentor Sandeep Aggarwal for his recommendations and suggestions to improve my site.
 
 ### **Author**

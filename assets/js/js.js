@@ -1,3 +1,4 @@
+ //menues...........................................................................................
  $(document).ready(function() {
             $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showen");
@@ -5,7 +6,7 @@
             });
       });
 
-      // Scrolling Effect
+      // Scrolling Effect...................................................
 
       $(window).on("scroll", function() {
             if($(window).scrollTop()) {
@@ -17,7 +18,7 @@
             }
       })
 
-//Image gallery
+//Image gallery...............................................................................
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
   var imgText = document.getElementById("imgtext");
@@ -25,7 +26,7 @@ function myFunction(imgs) {
   imgText.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = "block";
 }
-//for active menues
+//for active menues........................................................................
 var menuactive = document.getElementById("activeDiv");
 var menubtns = menuactive.getElementsByClassName("li a");
 for (var i = 0; i < menubtns.length; i++) {
@@ -36,7 +37,7 @@ for (var i = 0; i < menubtns.length; i++) {
   });
 }
 
-//google map
+//google map...................................................................................
 
         function initMap(){
             var options={
@@ -50,7 +51,8 @@ for (var i = 0; i < menubtns.length; i++) {
        
        });
         }
-      //send Email
+
+      //send Email.......................................................
         
 function sendMail(contactForm) {
     emailjs.send("gmail", "bamyanpage", {

@@ -59,18 +59,12 @@ I used the following process to deploy written and tested code to my GitHub repo
 
 ### **Testing**
 Basically testing were done in dailybases as the project build was ongoing. I have used gitpod tools to test
-the look, size and functionality of the project. I have added media queries for almost all of them to control
-the size of the pages both small and large screens. 
-Testing was carried out as the project build was ongoing. 
-Using GitPod and Google developer tools to test the look, feel and functionality of the project. 
-During testing I added a media query to control the size of the map as it looked too small on larger screens. 
-This suggestion came from my mentor. The website was tested on Chrome, IE, iPhone 6/7/8 and Samsung S5 as well 
-as Google developer tools. The links were tested as well as the look and transformation of the presented site 
-on the respective screen size/browser. I used regular pushes to the Git repository to ensure my work was saved 
-and provide version control should it be necessary. During testing I used multiple CSS queries to provide the 
-look and feel I wanted for all pages and to provide a consistency of font and colour scheme throughout the pages. 
-I also used CSS to ensure the presentation of the images and forms provided a good UX experience for the user 
-at all stages.
+the look, size and functionality of the project. I have used multiple media queries for pages to control
+the size both small and large screens. 
+Testing was carried out as the project build was going on. The website were tested in GitPod and Chrome browser
+in both large and small screens. During the testing i have consistently changed the CSS queries to provide 
+good looking and make it device-friendly page. Even though i couldn't find images with best resolution but yet
+i tried to use CSS to ensure the presentation of the images and forms to be user friendly look.
 
 ### **Code Credits and Personal Credits**
 + I used Bootstrap and copied the code for this and the required JS at the bottom of the page to facilitate the functionality.
@@ -80,4 +74,4 @@ at all stages.
 
 ### **Author**
 
-Steven Perring
+Asif Danishyar

@@ -25,7 +25,7 @@ is available for review in GitHub. They are linked as follow:
 
 + **Scope Planning** - []
 + **Strategic Planning** - [https://github.com/asifdanishyar/IFD-Milestone-Project/blob/master/assets/PDF-Files/2ndMileStoneProject-Prototype.pdf]
-+ **Structure** - []
++ **Project Schedule** - [https://github.com/asifdanishyar/IFD-Milestone-Project/blob/master/assets/PDF-Files/Project%20Schedule.pdf]
 + **Skeleton** - []
 
 ### **Project expansion**

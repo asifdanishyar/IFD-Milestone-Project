@@ -66,11 +66,13 @@ in both large and small screens. During the testing i have consistently changed 
 good looking and make it device-friendly page. Even though i couldn't find images with best resolution but yet
 i tried to use CSS to ensure the presentation of the images and forms to be user friendly look.
 
-### **Code Credits and Personal Credits**
-+ I used Bootstrap and copied the code for this and the required JS at the bottom of the page to facilitate the functionality.
-+ I took the JavaScript code from fellow student Anthony Nicklin's excellent website. I deleted out additional code Anthony had which I didn't require and changed the rest as appropriate to merge and work with my site and requirements. 
-+ Google searches were used to provide inspiration and hints when I found myself stuck for specific pieces of code but no code was copied directly.
-+ Credit to my mentor Spencer Barriball for his expertise and tips to improve my site.
+### **Coding Credits**
++ I used Bootstrap and w3school coding plus the JS required code.
++ I have got the Javascript code from google and edit it according to my needs.
++ I spent lots of time on menu toggle Class which was not working when i was testing in smaller screen. I shared
+this issue with Slack Community, mentor, totur support and finally playing with the coding words in js, 
+i was able to solve the issue and move forward.
++ Credit to my mentor Sandeep Aggarwal for his recommendations and suggestions to improve my site.
 
 ### **Author**
 

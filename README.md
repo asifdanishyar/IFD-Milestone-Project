@@ -23,10 +23,10 @@ In the footer i have only one link to facebook which gives the oportunity to fol
 my user experience notes helped me a lot when i was stucking on something. my original planning and mapping
 is available for review in GitHub. They are linked as follow:
 
-+ **Scope Planning** - []
-+ **Strategic Planning** - [https://github.com/asifdanishyar/IFD-Milestone-Project/blob/master/assets/PDF-Files/2ndMileStoneProject-Prototype.pdf]
++ **Project Scope** - [https://github.com/asifdanishyar/IFD-Milestone-Project/blob/master/assets/PDF-Files/Project-Scope.pdf]
++ **Project Skeleton** - [https://github.com/asifdanishyar/IFD-Milestone-Project/blob/master/assets/PDF-Files/2ndMileStoneProject-Prototype.pdf]
 + **Project Schedule** - [https://github.com/asifdanishyar/IFD-Milestone-Project/blob/master/assets/PDF-Files/Project%20Schedule.pdf]
-+ **Skeleton** - []
++ **Project Structure** - [https://github.com/asifdanishyar/IFD-Milestone-Project/blob/master/assets/PDF-Files/Project%20Structure.pdf]
 
 ### **Project expansion**
 

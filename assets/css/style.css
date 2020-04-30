@@ -69,12 +69,13 @@ nav ul li a {
   color: whitesmoke;
       
 }
-.active, li a:active {
- background-color: green;
+nav ul li a:hover {
+ background-color: #000;
  color: white;
  font-style: bold;
  font-size: 22px;
 }
+
 
 .menu-icon {
       line-height: 60px;

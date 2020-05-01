@@ -10,9 +10,13 @@ function sendMail(contactForm) {
             contactForm.name.value="",
             contactForm.emailaddress.value="",
             contactForm.projectsummary.value=""
+            var txt="your mail has been sent!";
+            
+            document.getElementById("demo").innerHTML = txt;
+            
             console.log("Successfully sent", response);
-           },
-          
+       
+              },
            
         function(error) {
             console.log("FAILED", error);

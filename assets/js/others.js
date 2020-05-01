@@ -1,10 +1,11 @@
  //menues...........................................................................................
  $(document).ready(function() {
             $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showen");
                   $("nav ul").toggleClass("hidden");
+                  $("nav ul").toggleClass("showen");
             });
       });
+
 
       // Scrolling Effect...................................................
 
@@ -55,28 +56,3 @@ for (var i = 0; i < menubtns.length; i++) {
         } */ //e qesmata baz dobara pak kon....................
 
       //send Email.......................................................
-        
-function sendMail(contactForm) {
-    emailjs.send("gmail", "bamyanpage", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
-    })
-    .then(
-        function(response) {
-            contactForm.name.value="",
-            contactForm.emailaddress.value="",
-            contactForm.projectsummary.value=""
-            console.log("Successfully sent", response);
-           },
-          
-           
-        function(error) {
-            console.log("FAILED", error);
-            
-        }
-    
-    );
-    return false;  // To block from loading a new page
-    
-}

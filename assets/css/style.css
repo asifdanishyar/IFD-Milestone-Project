@@ -83,11 +83,11 @@ nav ul li a .active{
     background-color: rgb(63, 62, 62);
     color: white;
     font-style: bold;
-    
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 10px;
     padding-left: 10px;
+    border-radius: 50%;
 
 }
 
@@ -127,16 +127,17 @@ nav ul li a .active{
 
 /* Style the images inside the grid */
 .column img {
-  opacity: 0.8; 
   cursor: pointer; 
   width: 150px;
   height: 150px;
   padding-left: 40px;
  align-items: center;
+ z-index: 999;
 }
 
 .column img:hover {
   opacity: 1;
+
 }
 
 /* Clear floats after the columns */
@@ -150,10 +151,13 @@ nav ul li a .active{
 .imgContainer {
   position: relative;
   display: none;
-  width: 80%;
+  width: 70%;
+  height: 50%;
   padding: 20px;
   align-content: center;
   margin: auto;
+  z-index: 999;
+
 }
 
 /* Expanding image text */
@@ -375,11 +379,15 @@ button[type="submit"] {
     background-color: #e84610;
     color: #fafafa;
 }
+.space{
+    clear: both;
+    margin-top: 40px;
+}
 
 /* Responsive layout - full page size */
 @media screen and (min-width:787px){
     
-    #events, #imggallery, #mapPosition, #historyCenter, #guidecenter, #contactCenter {
+    #imggallery, #mapPosition, #historyCenter, #guidecenter, #contactCenter {
         text-align: center;
         padding-left: auto;
         padding-right: auto;
@@ -387,6 +395,16 @@ button[type="submit"] {
         margin-right: auto;
         align-items: center;
         align-content: center;
+    }
+    #events{
+       text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        align-content: center;  
     }
      .footer{
         width: 100%;
@@ -477,6 +495,12 @@ button[type="submit"] {
         margin-right: auto;
         align-items: center;
         align-content: center;
+    }
+    #events{
+        width: 90%;
+        height: auto;
+        padding-top: 5%;
+
     }
     #imggallery{
         text-align: center;

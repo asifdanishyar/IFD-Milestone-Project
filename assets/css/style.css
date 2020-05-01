@@ -69,14 +69,26 @@ nav ul li a {
       
 }
 nav ul li a:hover {
- background-color: #000;
+ background-color: rgb(63, 62, 62);
  color: white;
  font-style: bold;
- font-size: 22px;
+ text-decoration: none;
 }
-nav ul li a:active{
-    background-color: #000;
-    background: rgba(0, 0, 0, 3);
+nav ul li a .active{
+    background-color:#000;
+    background: rgba(0, 0, 0, 9);
+    display: block;
+}
+#activeDiv{
+    background-color: rgb(63, 62, 62);
+    color: white;
+    font-style: bold;
+    
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+
 }
 
 
@@ -376,20 +388,6 @@ button[type="submit"] {
         align-items: center;
         align-content: center;
     }
-   
-    .two-photo-left {
-    width: 45%;
-    height: auto;
-    float: left;
-    margin: 20px;
-}
-.two-photo-right {
-   
-    width: 45%;
-    height: auto;
-    float: left;
-    margin: 20px;
-}
      .footer{
         width: 100%;
         height: auto;
@@ -416,18 +414,6 @@ button[type="submit"] {
         margin: auto;
         text-align: center;
     }
-    .two-photo-left{
-        width: 90%;
-        margin: 20px;
-        float: left;
-        text-align: center;
-    }
-    .two-photo-right{
-        width: 90%;
-        margin: 20px;
-        float: left;
-        text-align: center;
-    }
 
     .text_left{
         width: 100%;
@@ -438,31 +424,7 @@ button[type="submit"] {
             width: 100%;
             text-align: center;
         }
-        
-        .photo_left{
-            width: 100%;
-            text-align: center;
-        }
-        .text_right{
-            width: 100%;
-            margin: 20px;
-            text-align: center;
-        }
-    #content_top_left{
-        width: 90%;
-        height: auto;
-        margin: 10px;
-    }
-    #content_top_right{
-        width: 90%;
-        text-align: center;
-    }
-    #formar{
-        width: 90%;
-        float: center;
-        text-align: center;
-
-    }
+    
 
 /* index and history responsive*/
 @media screen and (max-width:786px){

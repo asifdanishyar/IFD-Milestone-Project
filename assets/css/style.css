@@ -49,7 +49,6 @@ nav ul {
       padding: 0;
       text-align: right;
       margin: 0;
-      padding-right: 40px;
       transition: 0,2s;
 }
 
@@ -74,6 +73,10 @@ nav ul li a:hover {
  color: white;
  font-style: bold;
  font-size: 22px;
+}
+nav ul li a:active{
+    background-color: #000;
+    background: rgba(0, 0, 0, 3);
 }
 
 
@@ -294,26 +297,7 @@ hr {
     padding: 0px 15px 0px 15px;
     margin: 0;
 }
-#content_top_left {
-    width: 55%;
-    float: left;
-    padding: 0px 10px 0px 15px;
-    margin: 0;
-}
-#content_top_right {
-    width: 25%;
-    float: left;
-    padding: 0px 15px 0px 10px;
-    margin: 0;
-    text-align: center;
-}
-#formar{
-    width: 25%;
-    margin-right: 40px;
-    margin-left: 40px;
-    float: left;
-    align-items: right;
-}
+
 #inner_link {
     padding: 0px 0px 0px 60px;
     line-height: 200%;

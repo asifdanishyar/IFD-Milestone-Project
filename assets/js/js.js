@@ -39,7 +39,7 @@ for (var i = 0; i < menubtns.length; i++) {
 
 //google map...................................................................................
 
-        function initMap(){
+       /* function initMap(){
             var options={
                 zoom: 12,
                 center: {lat: 34.81001, lng: 67.82121}
@@ -50,7 +50,7 @@ for (var i = 0; i < menubtns.length; i++) {
             map:marker
        
        });
-        }
+        } */ //e qesmata baz dobara pak kon....................
 
       //send Email.......................................................
         

@@ -223,7 +223,7 @@ nav ul li a:hover {
 }
 .pDesign{
     width: 90%;
-    font-size: 18px;
+    font-size: 22px;
     margin-left: 50px;
     margin-right: 20px;
     margin-top: 10px;
@@ -323,43 +323,41 @@ hr {
     margin-right: 15px;
     width: 55%;
 }
-.photo_left {
-    float: left;
-    width: 35%;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 .photo_right {
     float: left;
-    width: 35%;
-    margin-top: 30px;
-    margin-left: 10px;
+    width: 40%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 1%;
     margin-right: 10px;
-    padding: 0px 15px 0px 10px;
-}
-.text_right {
-    float: left;
-    margin: 10px;
-    width: 55%;
+    padding: 0px 0px 0px 10px;
 }
 
 .clear {
     clear: both;
 }
-.two-photo-left {
-    float: left;
-    width: 40%;
-    height: auto;
-    margin: 30px;
-}
-.two-photo-right {
-    float: left;
-    width: 40%;
-    height: auto;
-    margin: 30px;
-}
 
+.text-center{
+    width: 90%;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1%;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.photo-center{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
 /* CSS FOR CONTACT PAGE*/
 .bg-color-contact {
     background-color: #ffffff;

@@ -1,539 +1,503 @@
-
 html, body {
-      margin: 0;
-      padding:0;
-      width: 100%;
+margin: 0;
+padding:0;
+width: 100%;
 }
-
 body {
-      font-family: "Helvetica Neue",sans-serif;
-      font-weight: lighter;
+font-family: "Helvetica Neue",sans-serif;
+font-weight: lighter;
 }
-
-/* the navbar*/
-
+/* .......................................the navbar......................................*/
 header {
-      width: 100%;
-      height: 70vh;
-      background: url("../images/bandamir2.jpg") no-repeat 50% 50%;
-      background-size: cover;
+width: 100%;
+height: 70vh;
+background: url("../images/bandamir2.jpg") no-repeat 50% 50%;
+background-size: cover;
 }
 .headerbg{
-    width: 100%;
-    height: 30vh;
-    background: url("../images/bandamir2.jpg") no-repeat 50% 50%;
-    background-size: cover;
+width: 100%;
+height: 30vh;
+background: url("../images/bandamir2.jpg") no-repeat 50% 50%;
+background-size: cover;
 }
-
 .content {
-      width: 100%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
+width: 100%;
+margin: 4em auto;
+font-size: 20px;
+line-height: 30px;
+text-align: justify;
 }
-
-
 nav {
-      position: fixed;
-      width: 100%;
-      line-height: 60px;
+position: fixed;
+width: 100%;
+line-height: 60px;
 }
-
 nav ul {
-      line-height: 60px;
-      list-style: none;
-      background: rgba(0, 0, 0, 0);
-      overflow: hidden;
-      color: white;
-      padding: 0;
-      text-align: right;
-      margin: 0;
-      transition: 0,2s;
+line-height: 60px;
+list-style: none;
+background: rgba(0, 0, 0, 0);
+overflow: hidden;
+color: white;
+padding: 0;
+text-align: right;
+margin: 0;
+transition: 0,2s;
 }
-
 nav.black ul {
-      background: rgb(63, 62, 62);
+background: rgb(63, 62, 62);
 }
-
 nav ul li {
-      display: inline-block;
-      padding: 16px 40px;;
+display: inline-block;
+padding: 16px 40px;;
 }
-
 nav ul li a {
-  cursor: pointer;
-  font-size: 20px;
-  text-decoration: none;
-  color: whitesmoke;
-      
+cursor: pointer;
+font-size: 20px;
+text-decoration: none;
+color: whitesmoke;
 }
 nav ul li a:hover {
- background-color: rgb(63, 62, 62);
- color: white;
- font-style: bold;
- text-decoration: none;
+background-color: rgb(63, 62, 62);
+color: white;
+font-style: bold;
+text-decoration: none;
 }
 nav ul li a .active{
-    background-color:#000;
-    background: rgba(0, 0, 0, 9);
-    display: block;
+background-color:#000;
+background: rgba(0, 0, 0, 9);
+display: block;
 }
 #activeDiv{
-    background-color: rgb(63, 62, 62);
-    color: white;
-    font-style: bold;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 50%;
-
+background-color: rgb(63, 62, 62);
+color: white;
+font-style: bold;
+padding-top: 0;
+padding-bottom: 0;
+padding-right: 10px;
+padding-left: 10px;
+border-radius: 50%;
 }
-
-
 .menu-icon {
-      line-height: 60px;
-      width: 100%;
-      background: #000;
-      text-align: right;
-      box-sizing: border-box;
-      padding: 15px 24px;
-      cursor: pointer;
-      color: #fff;
-      display: none;
+line-height: 60px;
+width: 100%;
+background: #000;
+text-align: right;
+box-sizing: border-box;
+padding: 15px 24px;
+cursor: pointer;
+color: #fff;
+display: none;
 }
+/*......................button to the main page anmed show activities +....................  */
 #activitiesbtn{
-    margin-right: 20px;
-    margin-left: auto;
-    margin-top: 5px;
-    display: block;
-    background-color: white;
-    color: red;
-    font-size:20px;
-    border-radius: 50%;
-    height: 70px;
-    border: 1px solid;
+margin-right: 20px;
+margin-left: auto;
+margin-top: 5px;
+display: block;
+background-color: white;
+color: red;
+font-size:20px;
+border-radius: 50%;
+height: 70px;
+border: 1px solid;
 }
-
-
-
-/* gallery in index page linked with a button called "Show events" */
 .column {
-  float: left;
-  width: 25%;
-  padding: 10px;
+float: left;
+width: 25%;
+padding: 10px;
 }
-
-/* Style the images inside the grid */
+                    /* Style the images inside the activities */
 .column img {
-  cursor: pointer; 
-  width: 150px;
-  height: 150px;
-  padding-left: 40px;
- align-items: center;
- z-index: 999;
+cursor: pointer; 
+width: 150px;
+height: 150px;
+padding-left: 40px;
+align-items: center;
+z-index: 999;
 }
-
 .column img:hover {
-  opacity: 1;
-
+opacity: 1;
 }
-
-/* Clear floats after the columns */
+                    /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+content: "";
+display: table;
+clear: both;
 }
-
-/* The expanding image container */
+                    /* The expanding image */
 .imgContainer {
-  position: relative;
-  display: none;
-  width: 70%;
-  height: 50%;
-  padding: 20px;
-  align-content: center;
-  margin: auto;
-  z-index: 999;
-
+position: relative;
+display: none;
+width: 70%;
+height: 50%;
+padding: 20px;
+align-content: center;
+margin: auto;
+z-index: 999;
 }
-
-/* Expanding image text */
+                    /* Expanding image text */
 #imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-  padding: 10px;
+position: absolute;
+bottom: 15px;
+left: 15px;
+color: white;
+font-size: 20px;
+padding: 10px;
 }
-
-/* Closable button inside the expanded image */
+                    /* Close button inside the expanded image */
 .closebtn {
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
+position: absolute;
+top: 5px;
+right: 20px;
+color: white;
+font-size: 35px;
+cursor: pointer;
 }
-
 /* Map */       
- #map{
-            height: 300px;
-            width: 90%;
-            margin: 30px;
-            float: left;
-            margin-bottom: 30px;
-        }     
-
-/* Style the footer */
-
+#map{
+height: 300px;
+width: 90%;
+margin: 30px;
+float: left;
+margin-bottom: 30px;
+}     
+/* .....................................Style the footer ............................*/
 .uppercase {
-    text-transform: uppercase;
+text-transform: uppercase;
 }
-
 .footer {
-   position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: auto;
-   background-color:gray;
-   opacity: 0.8;
-   color: white;
-   text-align: center;
-   padding-top: 10px;
-   padding-right: 10px;
-   
+position: relative;
+left: 0;
+bottom: 0;
+width: 100%;
+height: auto;
+background-color:gray;
+opacity: 0.8;
+color: white;
+text-align: center;
+padding-top: 10px;
+padding-right: 10px;
 }
-
 .social-links {
-    padding-bottom: 15px;
+padding-bottom: 15px;
 }
-
 .social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #fafafa;
-    background:indianred;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+width: 32px;
+height: 32px;
+padding: 12px 0;
+border-radius: 50%;
+font-size: 13px;
+line-height: 7px;
+text-align: center;
+color: #fafafa;
+background:indianred;
+transition: all 0.35s ease-in-out;
+-moz-transition: all 0.35s ease-in-out;
+-webkit-transition: all 0.35s ease-in-out;
+-o-transition: all 0.35s ease-in-out;
 }
-
 .social-links li a i:hover {
-    background: blueviolet;
+background: blueviolet;
 }
-
-/* CSS for History page*/
+/*......................... ....................CSS for History page.......................................*/
 .hisory{
-    margin: 10px;
-    background-color: gray;
-    opacity: 0.9;
+margin: 10px;
+background-color: gray;
+opacity: 0.9;
 }
 .pDesign{
-    width: 90%;
-    font-size: 22px;
-    margin-left: 50px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    float: left;
-    text-align: justify;
+width: 90%;
+font-size: 22px;
+margin-left: 50px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: Arial, Helvetica, sans-serif;
+float: left;
+text-align: justify;
 }
 .hDesign{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+margin-left: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 #statue1{
-    width: 100%;
-    height: auto;
-    background: url("../images/Statue1.jpg");
-    background-size: 100% 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 40px;
-    margin-right: 10px;
-    float: left;
+width: 100%;
+height: auto;
+background: url("../images/Statue1.jpg");
+background-size: 100% 100%;
+border-radius: 8px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 40px;
+margin-right: 10px;
+float: left;
 }
-
-   
 #statue2{
-    width: 100%;
-    height: auto;
-    background: url("../images/Statue2.JPG");
-    background-size: 100% 100%;
-    border-radius: 8px;
-     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 40px;
-    margin-right: 10px;
-    float: left;
+width: 100%;
+height: auto;
+background: url("../images/Statue2.JPG");
+background-size: 100% 100%;
+border-radius: 8px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 40px;
+margin-right: 10px;
+float: left;
 }
-
-/* CSS for Guide page*/
+/* ......................................CSS for Guide page...............................*/
 #content {
-    width: 790px;
-    margin: 0px 25px 0px 0px;
-    padding: 15px 0px 0px 25px;
-    font-size: 12px;
+width: 790px;
+margin: 0px 25px 0px 0px;
+padding: 15px 0px 0px 25px;
+font-size: 12px;
 }
-                        /*create a line*/
+/*create a line*/
 #content hr {
-    color: #A9A87C;
-    border: none;
-    border-top: dashed 1px #A9A87C;
-    height: 1px;
+color: #A9A87C;
+border: none;
+border-top: dashed 1px #A9A87C;
+height: 1px;
 }
 hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
+display: block;
+unicode-bidi: isolate;
+margin-block-start: 0.5em;
+margin-block-end: 0.5em;
+margin-inline-start: auto;
+margin-inline-end: auto;
+overflow: hidden;
+border-style: inset;
+border-width: 1px;
 }
 .content_body {
-    widows: 100%;
-    padding: 0px 15px 0px 15px;
-    margin: 0;
+widows: 100%;
+padding: 0px 15px 0px 15px;
+margin: 0;
 }
-
 #inner_link {
-    padding: 0px 0px 0px 60px;
-    line-height: 200%;
+padding: 0px 0px 0px 60px;
+line-height: 200%;
 }
 .text_left {
-    float: left;
-    margin-right: 15px;
-    width: 55%;
+float: left;
+margin-right: 15px;
+width: 55%;
 }
 .photo_right {
-    float: left;
-    width: 40%;
-    height: auto;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 10px;
-    padding: 0px 0px 0px 10px;
+float: left;
+width: 40%;
+height: auto;
+margin-top: 1%;
+margin-left: 1%;
+margin-right: 10px;
+padding: 0px 0px 0px 10px;
 }
-
 .clear {
-    clear: both;
+clear: both;
 }
-
 .text-center{
-    width: 90%;
-    margin-right: 4%;
-    margin-left: 4%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 1%;
-    float: left;
-    display: block;
-    text-align: center;
+width: 90%;
+margin-right: 4%;
+margin-left: 4%;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 1%;
+float: left;
+display: block;
+text-align: center;
 }
 .photo-center{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    text-align: center;
-
+width: 100%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+text-align: center;
 }
-/* CSS FOR CONTACT PAGE*/
+/* ,.......................................CSS FOR CONTACT PAGE.................................*/
 .bg-color-contact {
-    background-color: #ffffff;
+background-color: #ffffff;
 }
 .center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
-    align-content: center;
+padding-top: 10px;
+margin: 0 auto;
+max-width: 100%;
+text-align: center;
+align-items: center;
+align-content: center;
 }
-
 button[type="submit"] {
-    width: 80px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: #e84610;
-    color: #fafafa;
+width: 80px;
+margin-top: 15px;
+margin-bottom: 10px;
+text-align: center;
+background-color: #e84610;
+color: #fafafa;
 }
 .space{
-    clear: both;
-    margin-top: 40px;
+clear: both;
+margin-top: 40px;
 }
-
 /* Responsive layout - full page size */
 @media screen and (min-width:787px){
-    
-    #imggallery, #mapPosition, #historyCenter, #guidecenter, #contactCenter {
-        text-align: center;
-        padding-left: auto;
-        padding-right: auto;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        align-content: center;
-    }
-    #events{
-       text-align: center;
-        padding-left: auto;
-        padding-right: auto;
-        padding-top: 5%;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        align-content: center;  
-    }
-     .footer{
-        width: 100%;
-        height: auto;
-        float: left;
-        background-color: gray;
-        opacity: 0.9;
-        position: relative;
-        bottom: 0px;
-        font-size: 20px;
-    }
-
-    .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0 auto;
-        max-width: 90%;
-    }
-
+#imggallery, #mapPosition, #historyCenter, #guidecenter, #contactCenter {
+text-align: center;
+padding-left: auto;
+padding-right: auto;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+align-content: center;
 }
-/*Guide responsive*/
+#events{
+text-align: center;
+padding-left: auto;
+padding-right: auto;
+padding-top: 5%;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+align-content: center;  
+}
+.footer{
+width: 100%;
+height: auto;
+float: left;
+background-color: gray;
+opacity: 0.9;
+position: relative;
+bottom: 0px;
+font-size: 20px;
+}
+.center-form {
+padding-top: 30px;
+min-height: 240px;
+margin: 0 auto;
+max-width: 90%;
+}
+}
+/*Guide page responsive*/
 @media screen and (max-width:786px){
-    .center-form{
-        width: 100%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .text_left{
-        width: 100%;
-        margin: 20px;
-        text-align: center;
-    }
-    .photo_right{
-            width: 100%;
-            text-align: center;
-        }
-    
-
+.center-form{
+width: 100%;
+margin: auto;
+text-align: center;
+}
+.text_left{
+width: 100%;
+margin: 20px;
+text-align: center;
+}
+.photo_right{
+width: 100%;
+text-align: center;
+}
 /* index and history responsive*/
 @media screen and (max-width:786px){
-    p{
-        text-align: center;
-    }
-    .content{
-        width: 100%;
-    }
-    h2{
-        text-align: center;
-        float: left;
-        width: 100%;
-    }
-    .row{
-        width: 80%;
-        margin: 20px;
-
-    }
-
-      .nav ul {
-            max-height: 0px;
-            background: #000;
-      }
-
-      .nav.black ul {
-            background: #000;
-      }
-
-      .showing {
-            max-height: 34em;
-      }
-
-      .nav ul li {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 24px;
-            text-align: center;
-      }
-
-      .menu-icon {
-            display: block;
-      }
-
-    #mappostion{
-        text-align: center;
-        padding-left: auto;
-        padding-right: auto;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        align-content: center;
-    }
-    #events{
-        width: 90%;
-        height: auto;
-        padding-top: 5%;
-
-    }
-    #imggallery{
-        text-align: center;
-        padding-left: auto;
-        padding-right: auto;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        align-content: center;
-    }
-      .column{
-        width: 90%;
-        text-align: center;
-    }
-    .column img{
-        width: 90%;
-        height: auto;
-        text-align: center;
-    }
-    .imgContainer{
-        width: 100%;
-        margin: 10px;
-    }
-
-    .footer{
-        width: 100%;
-        height: auto;
-        float: left;
-        background-color:gray;
-        opacity: 0.9;
-        position: relative;
-        bottom: 0px;
-    }
-    
+p{
+text-align: center;
+}
+.content{
+width: 100%;
+}
+h2{
+text-align: center;
+float: left;
+width: 100%;
+}
+.row{
+width: 80%;
+margin: 20px;
+}
+.nav ul {
+max-height: 0px;
+background: #000;
+}
+.nav.black ul {
+background: #000;
+}
+.showing {
+max-height: 34em;
+}
+.nav ul li {
+box-sizing: border-box;
+width: 100%;
+padding: 24px;
+text-align: center;
+}
+.menu-icon {
+display: block;
+}
+#mappostion{
+text-align: center;
+padding-left: auto;
+padding-right: auto;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+align-content: center;
+}
+#events{
+width: 90%;
+height: auto;
+padding-top: 5%;
+}
+#imggallery{
+text-align: center;
+padding-left: auto;
+padding-right: auto;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+align-content: center;
+}
+.column{
+width: 90%;
+text-align: center;
+}
+.column img{
+width: 90%;
+height: auto;
+text-align: center;
+}
+.imgContainer{
+width: 100%;
+margin: 10px;
+}
+.footer{
+width: 100%;
+height: auto;
+float: left;
+background-color:gray;
+opacity: 0.9;
+position: relative;
+bottom: 0px;
+}
+.content_body{
+width: 90%;
+margin: 2%
+}
+.photo_right{
+width: 90%;
+margin-left: 5%;
+align-content: center;
+text-align: center;
+}
+#historyCenter{
+width: 90%;
+margin-right: 2%;
+}
+#indexPageSmallSize{
+width: 90%;
+margin-right: 2%;
+}
+#map{
+width: 90%;
+height: 250;
+margin: 30px;
+margin-bottom: 30px;
+} 
 }
 }

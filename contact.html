@@ -1,111 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="assets/js/others.js"></script>
-    <script src="assets/js/sendmail.js"></script>
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_LcpcOXb8QlN8ISPp5Egd8");
-      })();
-</script>
-    <script type="text/javascrip" href="assets/js/js.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    </head>
-     <body>
-     <div class="wrapper">
-              <nav>
-               <div class="menu-icon">
-                  <i class="fa fa-bars fa-2x"></i>
-               </div>
-               <div class="menu">
-                  <ul style="background-color:gray;">
-                     <li><a href="index.html">Bamyan</a></li>
-                     <li><a href="history.html">History</a></li>
-                     <li><a href="guide.html">Guide</a></li>
-                     <li><a href="hotel.html">Hotel</a></li>
-                     <li id="activeDiv" class="active"><a href="contact.html">Contact</a></li>
-                  </ul>
-               </div>
-              
-            </nav>
-    </div>
-<br class="clear"></br></br></br>
-    <div class="w3-container w3-cyan">
-    <h1>Contact</h1> 
-    </div>
-    <div class="content_body">
-   <section class="mb-4">
- 
-    <!--Section heading using bootstrap-->
-    
-    <!--Section description usnign bootstrap to make it responsive-->
-    <p class="text-center w-responsive mx-auto mb-5 pDesign">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
-        
-          <div class="col-md-12 mb-md-0 mb-5">
-                      <div class="center-form">
-                        <form onsubmit="return sendMail(this);">
-                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/><br></br>
-                            <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/><br></br>
-                            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Write your question here!" required></textarea>
-                            <button type="submit" class="btn btn-secondary center-block">Send </button>
-                            <div style="font-size:22px; text-align:center;" id="demo"></div>
-                        </form>
-                    </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="assets/js/others.js"></script>
+      <script src="assets/js/sendmail.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+      <script type="text/javascript">
+         (function(){
+            emailjs.init("user_LcpcOXb8QlN8ISPp5Egd8");
+            })();
+      </script>
+      <script type="text/javascrip" href="assets/js/js.js"></script>
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <nav>
+            <div class="menu-icon">
+               <i class="fa fa-bars fa-2x"></i>
             </div>
-    
-     </section>
-    </div>
-
-
-
-
-       <footer>
-        <div class="footer">
-        <p style="text-align:center;">Copyright 2020</p>
-        <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.facebook.com/BAMYAN/">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                   
-        </ul>
-        </div>
-    </footer>
-
-<script>
-
-
- 
-
-
-</body>
+            <div class="menu">
+               <ul style="background-color:gray;">
+                  <li><a href="index.html">Bamyan</a></li>
+                  <li><a href="history.html">History</a></li>
+                  <li><a href="guide.html">Guide</a></li>
+                  <li><a href="hotel.html">Hotel</a></li>
+                  <li id="activeDiv" class="active"><a href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <br class="clear"></br></br></br>
+      <div class="w3-container w3-cyan">
+         <h1>Contact</h1>
+      </div>
+      <div class="content_body">
+         <section class="mb-4">
+            <!--Section heading using bootstrap-->
+            <p class="text-center w-responsive mx-auto mb-5 pDesign">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+               a matter of hours to help you.
+            </p>
+            <div class="col-md-12 mb-md-0 mb-5">
+               <div class="center-form">
+                  <form onsubmit="return sendMail(this);">
+                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/><br></br>
+                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/><br></br>
+                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Write your question here!" required></textarea>
+                     <button type="submit" class="btn btn-secondary center-block">Send </button>
+                     <div style="font-size:22px; text-align:center;" id="demo"></div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </div>
+      <footer>
+         <div class="footer">
+            <p style="text-align:center;">Copyright 2020</p>
+            <ul class="list-inline social-links">
+               <li class="list-inline-item">
+                  <a target="_blank" href="https://www.facebook.com/BAMYAN/">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </footer>
+    </body>
 </html>
